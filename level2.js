@@ -71,6 +71,7 @@ class Level2Game {
             cell.dataset.index = index;
 
             if (num !== null) {
+                cell.classList.add('has-number');
                 cell.addEventListener('click', () => this.handleCellClick(cell));
             } else {
                 cell.style.cursor = 'default';
@@ -92,9 +93,8 @@ class Level2Game {
         const cells = this.gameBoard.querySelectorAll('.cell');
         cells.forEach(cell => {
             cell.classList.remove('correct', 'wrong');
-            if (cell.dataset.number !== 'null') {
-                cell.classList.add('hidden');
-            }
+            cell.classList.add('hidden');
+            cell.style.background = '';
         });
     }
 
