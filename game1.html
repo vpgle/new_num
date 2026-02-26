@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字记忆游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>数字记忆游戏</h1>
+
+        <div class="controls">
+            <div class="size-options">
+                <button class="size-btn" data-size="2">2X2</button>
+                <button class="size-btn active" data-size="3">3X3</button>
+                <button class="size-btn" data-size="4">4X4</button>
+                <button class="size-btn" data-size="5">5X5</button>
+            </div>
+
+            <div class="game-controls">
+                <a href="index.html" class="back-btn">←</a>
+                <button id="startBtn">开始游戏</button>
+                <button id="resetBtn">重置游戏</button>
+                <a href="level2.html" class="next-level-btn">→</a>
+            </div>
+        </div>
+
+        <div id="gameBoard" class="game-board"></div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
